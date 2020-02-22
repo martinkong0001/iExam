@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#62def8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:text='Welcome to iExam!\nFeel free to move around to get a feel of AR technology.\nWhen you want to test your vision, simply press the "Place Chart!" button.\nYou can dismiss this window by tapping anywhere.'
+        android:textSize="24sp" />
+
+</RelativeLayout>
