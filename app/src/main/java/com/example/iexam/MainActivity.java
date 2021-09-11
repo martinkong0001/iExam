@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         String openGlVersionString = ((ActivityManager)
                 Objects.requireNonNull(this.getSystemService(Context.ACTIVITY_SERVICE)))
                 .getDeviceConfigurationInfo().getGlEsVersion();
+
         if (Double.parseDouble(openGlVersionString) < 3.0) {
             Log.e(MainActivity.class.getSimpleName(), "AR requires OpenGL ES 3.0 later");
             Toast.makeText(
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
 
-            //Handles the consequences of user voice input
+            //Handles invalid user voice input
             if (validInput == false) {
                 Toast.makeText(
                         getApplicationContext(),
@@ -148,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
                                 "contains \"up\", \"down\", \"left\", or \"right\". " +
                                 "Please try again by pressing the record button.",
                         Toast.LENGTH_LONG).show();
+
+            //Handles valid user voice input
             } else {
                 if (inputHandler.isTestFinished() == true) {
                     String score = inputHandler.getTestResult();
