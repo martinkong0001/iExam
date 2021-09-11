@@ -17,6 +17,7 @@ public class InputHandler {
                     {"right", "left", "up", "up", "down", "right", "left"},
                     {"up", "left", "down", "up", "left", "down", "up", "left"},
                     {"left", "down", "up", "left", "right", "down", "up", "left"}};
+
     public final int TOTAL_LINES = 9;
 
     public InputHandler() {
