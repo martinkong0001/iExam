@@ -32,7 +32,6 @@ public class ArHandler implements Scene.OnUpdateListener {
         fragment = (ArFragment)main.getSupportFragmentManager().
                 findFragmentById(R.id.fragment);
         buildSnellenChart();
-
     }
 
     //Build the Snellen chart as a ViewRenderable
