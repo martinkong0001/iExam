@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='iExam'
+rootProject.name='Virtual Eye Exam'
